@@ -55,11 +55,23 @@ The barchart shows the men died at a higher rate compared to women.
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The data shown shows among the people who died 64% were men and 36% were women.
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+The P value for the chi- square test was 0.001. So the null hypothesis is rejected. Therefore dying is dependent of sex. The fisher exact test shows that men are 2.3 times more likely to die from covid in korea than women in korea. 
 
 ## Conclusions
 
