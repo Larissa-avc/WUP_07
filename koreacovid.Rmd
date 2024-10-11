@@ -75,3 +75,4 @@ The P value for the chi- square test was 0.001. So the null hypothesis is reject
 
 ## Conclusions
 
+In conclusion the deaths from covid are dependent on sex. In fishers exact test it shows that men are 2.3 times more likely to die from covid than women. The helper file used is cat~cat. The P value in chi- square tes is 0.001 which is less than 0.05 therefore the null hypotheis is rejected.
